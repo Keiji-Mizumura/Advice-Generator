@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+}
+
+.advice{
+    background-color: hsl(217, 19%, 24%);
+    width: 550px;
+    padding: 30px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.advice-header{
+    padding: 10px;
+    font-size: .7rem;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 5px;
+}
+
+.advice-content{
+    font-size: .8rem;
+    color: hsl(193, 38%, 86%);
+    padding: 15px 0;
+}
+
+.divider {
+    padding: 20px 0;
+    padding-bottom: 30px;
+    background-image: url('../public/images/pattern-divider-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+  
+
+.btn{
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 30px);
+    background-color: hsl(150, 100%, 66%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
+}
+
+.loading-spinner {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid hsl(150, 100%, 66%);
+    border-bottom-color: transparent;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@media(max-width: 570px){
+    .advice{
+        width: 95%;
+        margin: 100px auto;
+    }
+    .divider{
+        background-image: url('../public//images/pattern-divider-mobile.svg');
+    }
+}
